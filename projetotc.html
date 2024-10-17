@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tinkercad semafuro duplo</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
+<nav>
+    <a href="./index.html">pagina principal</a>
+    <a href="./Ptinkercad.html">tinkercad</a>
+    <a href="./arduino.html"> Arduino</a>
+    <a href="./projetotc.html">tinkercad na prática</a>
+    <a href="./arduinonapratica.html"> ARDUÍNO na prática</a>
+    <a href="./contador.html">contador de 0 a 9</a>
+    <a href="./contadordecrecente.html">contador decrecente de 9 a 0</a>
+   <a href="./contador decrecente com cemafuro duplo">contador decrecente com cemafuro duplo</a>
+  </nav>
+  
+
+  <h2>simulação de um sircuito de semafuro duplo</h2>
+<div>
+    <img src="Sem título.jpg" alt="simulação de um sircuito de semafuro duplo">
+</div>
+<br>
+<h2>Código C++ do semafuro duplo</h2>
+<br>
+<br>
+<p>// C++ code
+    <br>
+    //
+    <br>
+    void setup()
+    <br>
+    {
+        <br>
+      pinMode(8, OUTPUT);
+      <br>
+      pinMode(13, OUTPUT);
+      <br>
+      pinMode(9, OUTPUT);
+      <br>
+      pinMode(10, OUTPUT);
+      <br>
+      pinMode(11, OUTPUT);
+      <br>
+      pinMode(12, OUTPUT);
+      <br>
+    }
+    <br>
+    <br>
+    
+    void loop()
+    <br>
+    {
+        <br>
+      digitalWrite(8, HIGH);
+      <br>
+      digitalWrite(13, HIGH);
+      <br>
+      delay(9000); // Wait for 9000 millisecond(s)
+      <br>
+      delay(9000); // Wait for 9000 millisecond(s)
+      <br>
+      digitalWrite(8, LOW);
+      <br>
+      digitalWrite(9, HIGH);
+      <br>
+      digitalWrite(13, LOW);
+      <br>
+      delay(2000); // Wait for 2000 millisecond(s)
+      <br>
+      digitalWrite(9, LOW);
+      <br>
+      digitalWrite(10, HIGH);
+      <br>
+      digitalWrite(11, HIGH);
+      <br>
+      delay(7000); // Wait for 7000 millisecond(s)
+      <br>
+      delay(7000); // Wait for 7000 millisecond(s)
+      <br>
+      digitalWrite(10, LOW);
+      <br>
+      digitalWrite(12, HIGH);
+      <br>
+      digitalWrite(11, LOW);
+      <br>
+      delay(2000); // Wait for 2000 millisecond(s)
+      <br>
+      digitalWrite(12, LOW);
+      <br>
+    }</p>
